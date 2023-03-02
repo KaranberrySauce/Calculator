@@ -1,0 +1,84 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    box-sizing: border-box;
+}
+/*-----------------Nav bar----------------------*/
+.selectVersion3{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+
+.selectVersion3 li a{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.selectVersion3 li a:hover{
+    color: #33ffd8;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #2a0123;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .calculator {
+    width: 280px;
+    background: rgb(135, 172, 137);
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.container .calculator .screen{
+    width: 100%;
+    background: rgba(80, 79, 79, 0.515);
+    padding: 7px;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 5px 5px 0 0;
+}
+.container .calculator .screen #result, .container .calculator .screen #type{
+    height: 32px;
+}
+.container .calculator .screen #result{
+    text-align: right;
+    margin-top: 5px;
+}
+
+.container .calculator .numpad{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.container .calculator .numpad button{
+    width: 25%;
+    height: 50px;
+    background: rgba(221, 240, 238, 0.515);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #000000;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .calculator .numpad button:nth-child(4n){
+    margin-right: 0;
+}
